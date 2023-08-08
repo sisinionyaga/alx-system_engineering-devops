@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $((' echo $PATH | grep -o ":/" | wc -1 ' +1))
+int main() { char *path = getenv("PATH"); int count = 1; while (*path) if (*path++ == ':') count++; printf("Number of directories in PATH: %d\n", count); return 0; }
